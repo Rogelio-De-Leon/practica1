@@ -1,0 +1,605 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>  SITO - UTSLP </title>
+ 
+	<link rel="stylesheet" href="styles2/bootstrap/bootstrap_4.3.1.min.css" type="text/css"><!--FORMULARIO-->
+	<!--<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">ICONOS BOTONES-->
+	<link href="styles2/bootstrap/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"><!--ICONOS BOTONES-->
+	<link rel="stylesheet" href="styles2/redmond_1.7.3/jquery-ui-1.7.3.custom.css"> <!--DIALOG-->
+	<link rel="stylesheet" href="styles2/bootstrap/font-awesome.min.css"> <!--DIALOG--> 
+	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> DIALOG-->
+	 
+<style>
+
+body {
+
+	background:url(Back3.jpg);
+	overflow-x: hidden;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	
+}
+
+.card0 {
+    box-shadow: 0px 4px 8px 0px #757575;
+    border-radius: 0px
+	background-color: rgb(0,0,255); 
+	opacity: .85;	
+} 
+
+a:link{
+     color:#FFFFFF	;
+}  
+
+.card2 {
+    margin: 0px 40px;
+	display: block;
+
+}
+
+.logo {
+    width: 100%;
+  	max-width: 320px;
+  	height:100%; 
+    margin-top: 5%;
+    margin-left: 10%;	
+	
+} 
+
+.image {
+ 	width: 100%;
+	max-width: 385px;
+    /* width: 385px;
+		height: 252px
+	*/
+    height:100%; 
+}
+
+.border-line {
+    border-right: 1px solid #EEEEEE
+}
+
+.facebook {
+    background-color: #3b5998;
+    color: #fff;
+    font-size: 18px;
+    padding-top: 5px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer
+}
+
+.twitter {
+    background-color: #1DA1F2;
+    color: #fff;
+    font-size: 18px;
+    padding-top: 5px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer
+}
+
+.linkedin {
+    background-color: #2867B2;
+    color: #fff;
+    font-size: 18px;
+    padding-top: 5px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer
+}
+
+.line {
+    height: 1px;
+    width: 45%;
+    background-color: #E0E0E0;
+    margin-top: 10px
+}
+
+.or {
+    width: 10%;
+    font-weight: bold
+}
+
+.text-sm {
+    font-size: 14px !important
+}
+
+::placeholder {
+    color: #BDBDBD;
+    opacity: 1;
+    font-weight: 300
+}
+
+:-ms-input-placeholder {
+    color: #BDBDBD;
+    font-weight: 300
+}
+
+::-ms-input-placeholder {
+    color: #BDBDBD;
+    font-weight: 300
+}
+
+input,
+textarea {
+    padding: 10px 12px 10px 12px;
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+    margin-bottom: 5px;
+    margin-top: 2px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #2C3E50;
+    font-size: 14px;
+    letter-spacing: 1px
+}
+
+input:focus,
+textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #304FFE;
+    outline-width: 0
+}
+
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0
+}
+
+a {
+    color: inherit;
+    cursor: pointer
+}
+
+.btn-blue {
+    background-color: #1A237E;
+    width: 150px;
+    color: #fff;
+    border-radius: 2px
+}
+
+.btn-blue:hover {
+    background-color: #000;
+    cursor: pointer
+}
+
+.bg-blue {
+    color: #fff;
+    background-color: #046A38
+}
+
+@media screen and (max-width: 991px) {
+    .logo {
+        margin-left: 10%;
+    }
+
+    .image {
+        width: 308px;
+        height: 201px
+    }
+
+    .border-line {
+        border-right: none
+    }
+
+    .card2 {
+        border-top: 1px solid #EEEEEE !important;
+        margin: 0px 15px
+    }
+	
+	body { 
+ 
+		background:url(Back4.jpg);
+		background-repeat:no-repeat;
+		background-size:contain;
+		background-position:center;
+	}
+
+	.responsive {
+	  width: 65%; 
+	  height: auto;
+	}
+
+	
+ 
+} 
+
+.prueba {
+		padding-left:10%
+	}
+
+
+.btn-warning{
+	background-color:#e09900;
+}
+
+.btn-success{
+	background-color:#046a38;
+}
+
+.btn-primary{
+	background-color:#0c71c3;
+}
+
+.btn-info{
+	background-color:#3399CC;
+}
+
+
+
+
+
+  </style>	
+	
+
+<script type="text/javascript" src="javascript/utilities.js"></script><script type="text/javascript" src="javascript/jquery/jquery-1.5.1.min.js"></script><script type="text/javascript" src="javascript/jquery/jquery-ui-1.8.2.min.js"></script><script>var $jq = jQuery.noConflict();</script><script language="javascript" type="text/javascript">
+	
+	<!-- 
+		window.history.go(1);
+		document.oncontextmenu = function()
+			{ 
+				return false;
+			}		
+		document.onkeydown = function()
+		{ 
+			if(window.event && window.event.keyCode == 116)
+				{
+					window.event.keyCode = 505; 
+				}
+			if(window.event && window.event.keyCode == 505)
+				{ 
+					return false;    
+				}			  			
+		}  
+	//-->
+</script><script language="javascript" type="text/javascript">
+<!--
+	$jq(document).ready(function(){
+			//Cuadro de mensaje
+			$jq('#mensajeDialogo').dialog({
+				autoOpen: false,
+				modal: true,
+				draggable: false,
+				resizable: false,
+				minHeight: 50,
+				show: 'clip',
+				hide: 'clip'
+			});
+		});
+		
+	var iconoInfo = "<span class='ui-icon ui-icon-info' style='float:left;'></span>";
+	
+	function SITO_Alerta(visible, color){
+	//console.log("etntra a alerta....");
+		if(visible == "hidden")
+			{
+				document.getElementById("Alerta").innerHTML = "";
+			}
+		document.getElementById("Alerta").style.visibility = visible;
+		document.getElementById("Alerta").style.color = color;
+
+	}
+	
+	function SITO_Acceso(){
+		if (Trim(document.forma.xUsuario.value).length < 1){		
+			$jq("#contenidoMsg").html(iconoInfo+"   Debes proporcionar tu <b>usuario</b>").addClass("nTexto2N tex-c");
+			$jq("#mensajeDialogo").dialog("open");
+			document.forma.xUsuario.value = "";
+			document.forma.xUsuario.focus(); 
+			return;
+		}
+		if (Trim(document.forma.xContrasena.value).length < 1){
+			$jq("#contenidoMsg").html(iconoInfo+"   Debes proporcionar tu <b>contraseña</b>").addClass("nTexto2N tex-c");
+			$jq("#mensajeDialogo").dialog("open");
+			document.forma.xContrasena.value = "";
+			document.forma.xContrasena.focus();
+			return;
+		}
+		document.forma.yAccion.value = "Iniciar_Sesion";
+		document.forma.submit();
+	}
+
+	function Restablecer_contrasena()
+	{
+		var pagina = "jsp/proceso_correo/proceso_recuperar_contrasena.jsp";
+		 var vWinPres = window.open(pagina, "Restablecer_contrasena", "width=650, height=250, statusbar=no, directories=no, menubar=no, scrollbars=yes, resizable=no, top=50, left=50");
+		vWinPres.opener = self;
+	}
+	
+	function RecContra(){
+		$jq("#contenidoMsg").html(iconoInfo+"   Por el momento para recuperar tu contraseña debes enviar un correo a <b>srodriguez@utslp.edu.mx</b>, favor de incluir:<b> <br> * Nombre completo <br> * Usuario (Si lo conoces) <br> * Fecha de nacimiento </b>").addClass("nTexto2N tex-c");
+		$jq("#mensajeDialogo").dialog("open");
+	}
+	
+
+//-->
+</script></head>
+
+<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+
+
+  <!--para dialog-->
+
+
+
+
+
+
+
+
+
+<body onload="">
+   
+<form name="forma" method="post" action="">
+<div class="container-fluid px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto">
+    <div class="card card0 border-0">
+		<div class="bg-blue py-4">
+		
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 prueba"> 
+				<i class="fa fa-phone-square">&nbsp; <b>(444) 834 83 00 </b></i>		
+				&nbsp;&nbsp;&nbsp;
+				<a class="link" href="https://www.facebook.com/UniversidadTecnologicadeSLP/" target="_blank"><span class="fa fa-facebook mr-4 text-sm"></span></a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 prueba"> 			
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 prueba"> 
+				<a href="http://utslp.edu.mx/" class="ml-auto mb-0 text-sm"><b>Página Web</b></a>		
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 prueba"> 
+				<a href="https://plataforma-utslp.net/" class="ml-auto mb-0 text-sm"><b>Plataforma educativa</b></a>
+			</div>
+		
+ 
+        </div> 
+        <div class="row d-flex">
+            
+            <div class="col-lg-6">
+			
+                <div class="card2 card border-0 px-4 py-5">
+					 <div class="row px-3 justify-content-center mt-4 mb-5 border-line"> 
+					</div>
+					
+					<div class="row px-3 justify-content-center mt-4 mb-5 border-line"> 
+					<img src="images/banner3.png" alt="Sistema de Información Táctico Operativo" height="106" class="responsive">
+					</div>
+					 
+                   <div class="row px-3 justify-content-center mt-4 mb-5 border-line"> 
+				   <input type="hidden" name="yAccion" id="yAccion" value="">
+					<input type="hidden" name="yIntentos" id="yIntentos" value="1">
+					<input type="hidden" name="yUsuario" id="yUsuario" value="">
+					<label id="Alerta"><b></b></label>
+					</div>
+					
+                    <div class="row px-3"> <label class="mb-1">
+                            <h6 class="mb-0 text-sm"><b>Usuario</b></h6>
+                        </label>  
+						
+						<input class="mb-4" type="text" name="xUsuario" id="xUsuario" onkeypress="return Password(event)" onfocus="SITO_Alerta('hidden', '#008000')" onkeydown="if(event.keyCode==13)SITO_Acceso()" value="" placeholder="Introduce tu Usuario" required="" maxlength="15">  
+						</div>
+                    <div class="row px-3"> <label class="mb-1">
+                            <h6 class="mb-0 text-sm"><b>Contraseña</b></h6>
+                        </label> 
+
+						<input type="password" name="xContrasena" id="xContrasena" class="pass" onkeypress="return Password(event)" onfocus="SITO_Alerta('hidden', '#008000')" onkeydown="if(event.keyCode==13)SITO_Acceso()" value="" placeholder="Introduce tu Contraseña" maxlength="20">
+						</div>
+						
+						<div class="col-md-4 col-sm-6 col-xs-12 " style="text-align:center"> 
+							<a href="#" class="ml-auto mb-0 text-sm" onclick="RecContra()" style="color:#000000">¿Olvidaste tu contraseña?</a>
+						</div>
+						<div class=" col-md-4 col-sm-6 col-xs-12 "> 			
+						</div> 
+						<div class=" col-md-4 col-sm-6 col-xs-12 " style="text-align:center"> 
+							 <a href="#" class="ml-auto mb-0 text-sm" onclick="Restablecer_contrasena()" style="color:#000000">Activa tu cuenta</a>
+						</div>
+					
+ 
+					 
+					  
+					 <div class="row mb-4 px-3"> <small class="font-weight-bold"></small> </div> 
+					 					 
+					<div class="col-xs-12 " style="text-align:left"> 
+						<button type="button" class="btn btn-labeled btn-info " onclick="SITO_Acceso()">
+                			<span class="btn-label"><i class="glyphicon glyphicon-ok-sign"></i></span>  Ingresar
+						</button>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						 <a class="btn icon-btn btn-info" href="Formatos/SITO.ppsx" target="_blank"><span class="glyphicon glyphicon-save img-circle text-warning"></span> Manual del Alumno</a>
+					 	&nbsp;
+						
+					</div>  
+			
+               				<div class="row mb-4 px-3"> <small class="font-weight-bold"></small> </div> 	
+			    </div>
+				
+            </div>
+			<div class="col-lg-6">
+                <div class="card2 card border-0 px-4 py-5"> 
+
+				  <div class="row px-3 justify-content-center mt-4 mb-5 border-line"> 
+					</div>
+				    <div class="row px-2 mb-3">
+                       <b> Solicita Ficha de Admisión  </b>&nbsp;<div class="line"></div>
+                        
+                    </div>
+					
+			   		<div class="row mb-3 px-3" align="center"> 
+					 <a class="btn icon-btn  btn-success btn-block" href="jsp/escolar/proceso_admision/proceso_interesado.jsp?xModalidadP=N" target="_blank"><span class="glyphicon glyphicon-edit"></span> TSU Escolarizado</a>
+					 &nbsp;
+					 <a class="btn icon-btn btn-warning btn-block" href="jsp/escolar/proceso_admision/proceso_interesado.jsp?xModalidadP=D" target="_blank"><span class="glyphicon glyphicon-edit"></span> TSU Empresarial</a>
+					 &nbsp;
+					  <a class="btn icon-btn btn-primary btn-block" href="jsp/escolar/proceso_admision_lic/proceso_interesado.jsp" target="_blank"><span class="glyphicon glyphicon-log-in"></span> Continuidad</a>
+					 &nbsp;
+					  <a class="btn icon-btn btn-danger btn-block" href="jsp/seguimiento_egreso/proceso_registro_egresado.jsp?xNuevo=1" target="_blank"><span class="glyphicon glyphicon-tasks"></span> Seguimiento</a>
+					 &nbsp; 
+					 
+					</div>
+				
+
+                </div>
+				
+            </div>
+        </div>
+        <div class="bg-blue py-4">
+            <div class="row px-3"> <small class="ml-4 ml-sm-5 mb-2">Av. Dr. Arturo Nava Jaimes No. 100 Rancho Nuevo, Soledad de Graciano Sánchez, S.L.P. Tel (444) 8 34 83 00  Ext. 2072</small>
+                <div class="social-contact ml-4 ml-sm-auto"> 
+					<a class="link" href="https://www.facebook.com/UniversidadTecnologicadeSLP/" target="_blank"><span class="fa fa-facebook mr-4 text-sm"></span></a>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</div>
+           		
+		    </div>
+        </div>
+    </div>
+</div>
+ 
+	
+</form>	
+	
+
+
+<div class="ui-dialog ui-widget ui-widget-content ui-corner-all " tabindex="-1" role="dialog" aria-labelledby="ui-dialog-title-mensajeDialogo" style="display: none; z-index: 1000; outline: 0px;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix" unselectable="on"><span class="ui-dialog-title" id="ui-dialog-title-mensajeDialogo" unselectable="on">Mensaje del Sistema - SITO</span><a href="#" class="ui-dialog-titlebar-close ui-corner-all" role="button" unselectable="on"><span class="ui-icon ui-icon-closethick" unselectable="on">close</span></a></div><div id="mensajeDialogo" style="padding:8px" class="ui-dialog-content ui-widget-content">
+	<table border="0" cellpadding="0" cellspacing="0" align="center" width="100%">
+    	<tbody><tr>
+        	<td><div id="contenidoMsg"></div></td>
+        </tr>
+    </tbody></table>
+</div></div></body></html>
+<body onload="">
+   
+<form name="forma" method="post" action="">
+<div class="container-fluid px-1 px-md-5 px-lg-1 px-xl-5 py-5 mx-auto">
+    <div class="card card0 border-0">
+		<div class="bg-blue py-4">
+		
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 prueba"> 
+				<i class="fa fa-phone-square">&nbsp; <b>(444) 834 83 00 </b></i>		
+				&nbsp;&nbsp;&nbsp;
+				<a class="link" href="https://www.facebook.com/UniversidadTecnologicadeSLP/" target="_blank"><span class="fa fa-facebook mr-4 text-sm"></span></a>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 prueba"> 			
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 prueba"> 
+				<a href="http://utslp.edu.mx/" class="ml-auto mb-0 text-sm"><b>Página Web</b></a>		
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 prueba"> 
+				<a href="https://plataforma-utslp.net/" class="ml-auto mb-0 text-sm"><b>Plataforma educativa</b></a>
+			</div>
+		
+ 
+        </div> 
+        <div class="row d-flex">
+            
+            <div class="col-lg-6">
+			
+                <div class="card2 card border-0 px-4 py-5">
+					 <div class="row px-3 justify-content-center mt-4 mb-5 border-line"> 
+					</div>
+					
+					<div class="row px-3 justify-content-center mt-4 mb-5 border-line"> 
+					<img src="images/banner3.png" alt="Sistema de Información Táctico Operativo" height="106" class="responsive">
+					</div>
+					 
+                   <div class="row px-3 justify-content-center mt-4 mb-5 border-line"> 
+				   <input type="hidden" name="yAccion" id="yAccion" value="">
+					<input type="hidden" name="yIntentos" id="yIntentos" value="1">
+					<input type="hidden" name="yUsuario" id="yUsuario" value="">
+					<label id="Alerta"><b></b></label>
+					</div>
+					
+                    <div class="row px-3"> <label class="mb-1">
+                            <h6 class="mb-0 text-sm"><b>Usuario</b></h6>
+                        </label>  
+						
+						<input class="mb-4" type="text" name="xUsuario" id="xUsuario" onkeypress="return Password(event)" onfocus="SITO_Alerta('hidden', '#008000')" onkeydown="if(event.keyCode==13)SITO_Acceso()" value="" placeholder="Introduce tu Usuario" required="" maxlength="15">  
+						</div>
+                    <div class="row px-3"> <label class="mb-1">
+                            <h6 class="mb-0 text-sm"><b>Contraseña</b></h6>
+                        </label> 
+
+						<input type="password" name="xContrasena" id="xContrasena" class="pass" onkeypress="return Password(event)" onfocus="SITO_Alerta('hidden', '#008000')" onkeydown="if(event.keyCode==13)SITO_Acceso()" value="" placeholder="Introduce tu Contraseña" maxlength="20">
+						</div>
+						
+						<div class="col-md-4 col-sm-6 col-xs-12 " style="text-align:center"> 
+							<a href="#" class="ml-auto mb-0 text-sm" onclick="RecContra()" style="color:#000000">¿Olvidaste tu contraseña?</a>
+						</div>
+						<div class=" col-md-4 col-sm-6 col-xs-12 "> 			
+						</div> 
+						<div class=" col-md-4 col-sm-6 col-xs-12 " style="text-align:center"> 
+							 <a href="#" class="ml-auto mb-0 text-sm" onclick="Restablecer_contrasena()" style="color:#000000">Activa tu cuenta</a>
+						</div>
+					
+ 
+					 
+					  
+					 <div class="row mb-4 px-3"> <small class="font-weight-bold"></small> </div> 
+					 					 
+					<div class="col-xs-12 " style="text-align:left"> 
+						<button type="button" class="btn btn-labeled btn-info " onclick="SITO_Acceso()">
+                			<span class="btn-label"><i class="glyphicon glyphicon-ok-sign"></i></span>  Ingresar
+						</button>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						 <a class="btn icon-btn btn-info" href="Formatos/SITO.ppsx" target="_blank"><span class="glyphicon glyphicon-save img-circle text-warning"></span> Manual del Alumno</a>
+					 	&nbsp;
+						
+					</div>  
+			
+               				<div class="row mb-4 px-3"> <small class="font-weight-bold"></small> </div> 	
+			    </div>
+				
+            </div>
+			<div class="col-lg-6">
+                <div class="card2 card border-0 px-4 py-5"> 
+
+				  <div class="row px-3 justify-content-center mt-4 mb-5 border-line"> 
+					</div>
+				    <div class="row px-2 mb-3">
+                       <b> Solicita Ficha de Admisión  </b>&nbsp;<div class="line"></div>
+                        
+                    </div>
+					
+			   		<div class="row mb-3 px-3" align="center"> 
+					 <a class="btn icon-btn  btn-success btn-block" href="jsp/escolar/proceso_admision/proceso_interesado.jsp?xModalidadP=N" target="_blank"><span class="glyphicon glyphicon-edit"></span> TSU Escolarizado</a>
+					 &nbsp;
+					 <a class="btn icon-btn btn-warning btn-block" href="jsp/escolar/proceso_admision/proceso_interesado.jsp?xModalidadP=D" target="_blank"><span class="glyphicon glyphicon-edit"></span> TSU Empresarial</a>
+					 &nbsp;
+					  <a class="btn icon-btn btn-primary btn-block" href="jsp/escolar/proceso_admision_lic/proceso_interesado.jsp" target="_blank"><span class="glyphicon glyphicon-log-in"></span> Continuidad</a>
+					 &nbsp;
+					  <a class="btn icon-btn btn-danger btn-block" href="jsp/seguimiento_egreso/proceso_registro_egresado.jsp?xNuevo=1" target="_blank"><span class="glyphicon glyphicon-tasks"></span> Seguimiento</a>
+					 &nbsp; 
+					 
+					</div>
+				
+
+                </div>
+				
+            </div>
+        </div>
+        <div class="bg-blue py-4">
+            <div class="row px-3"> <small class="ml-4 ml-sm-5 mb-2">Av. Dr. Arturo Nava Jaimes No. 100 Rancho Nuevo, Soledad de Graciano Sánchez, S.L.P. Tel (444) 8 34 83 00  Ext. 2072</small>
+                <div class="social-contact ml-4 ml-sm-auto"> 
+					<a class="link" href="https://www.facebook.com/UniversidadTecnologicadeSLP/" target="_blank"><span class="fa fa-facebook mr-4 text-sm"></span></a>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</div>
+           		
+		    </div>
+        </div>
+    </div>
+</div>
+ 
+	
+</form>	
+	
+
+
+<div class="ui-dialog ui-widget ui-widget-content ui-corner-all " tabindex="-1" role="dialog" aria-labelledby="ui-dialog-title-mensajeDialogo" style="display: none; z-index: 1000; outline: 0px;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix" unselectable="on"><span class="ui-dialog-title" id="ui-dialog-title-mensajeDialogo" unselectable="on">Mensaje del Sistema - SITO</span><a href="#" class="ui-dialog-titlebar-close ui-corner-all" role="button" unselectable="on"><span class="ui-icon ui-icon-closethick" unselectable="on">close</span></a></div><div id="mensajeDialogo" style="padding:8px" class="ui-dialog-content ui-widget-content">
+	<table border="0" cellpadding="0" cellspacing="0" align="center" width="100%">
+    	<tbody><tr>
+        	<td><div id="contenidoMsg"></div></td>
+        </tr>
+    </tbody></table>
+</div></div></body>
